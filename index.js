@@ -38,7 +38,7 @@ function takePhoto() {
   const link = document.createElement('a')
   link.href = data
   link.setAttribute('download', 'WorkTheCamera')
-  link.textContent = 'Download Image'
+  link.innerHTML = `<img src="${data}" alt="Pose"/>`
   strip.insertBefore(link, strip.firstChild)
 }
 
